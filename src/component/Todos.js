@@ -1,6 +1,7 @@
 import { getTodos } from '../services/todos-api'
 import { useState, useEffect } from 'react'
-// import Create from './Create'
+import Create from './CreateTodo'
+
 
 export default function Todos() {
     const [todos, setTodos] = useState([])
@@ -20,7 +21,7 @@ export default function Todos() {
                 })}
 
             </ul>
-            {/* <Create /> */}
+            <Create />
         </div>
     )
 
